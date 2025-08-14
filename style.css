@@ -11,14 +11,34 @@ Known Bugs:
 
 /* -- // Global Vars */
 :root {
---mainFont: 'GilSansMt';
---backupFont: 'sans-serif'
+--mainFont: 'GilSansMtMedium';
+--boldFont: 'GilSansMtHeavy';
+--backupFont: 'sans-serif';
 }
 
 /* -- // Custom Fonts */
     @font-face {
-        font-family: 'GilSansMt';
-        src: url('../assets/fonts/gillsansmt.ttf') format('truetype');
+        font-family: 'GilSansMtHeavy';
+        src: url('../assets/fonts/GillSans-Heavy/GillSans-Heavy.ttf') format('truetype');
+        src: url('../assets/fonts/GillSans-Heavy/GillSans-Heavy.woff') format('woff');
+        src: url('../assets/fonts/GillSans-Heavy/GillSans-Heavy.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: 'GilSansMtMedium';
+        src: url('../assets/fonts/GillSans-Medium/GillSans-Medium.ttf') format('truetype');
+        src: url('../assets/fonts/GillSans-Medium/GillSans-Medium.woff') format('woff');
+        src: url('../assets/fonts/GillSans-Medium/GillSans-Medium.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: "GillSansMT";
+        src: url("https://db.onlinewebfonts.com/t/8408af8fdb91756ebdf3b4bb481bb3c5.eot");
+        src: url("https://db.onlinewebfonts.com/t/8408af8fdb91756ebdf3b4bb481bb3c5.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/8408af8fdb91756ebdf3b4bb481bb3c5.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/8408af8fdb91756ebdf3b4bb481bb3c5.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/8408af8fdb91756ebdf3b4bb481bb3c5.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/8408af8fdb91756ebdf3b4bb481bb3c5.svg#Gill Sans MT Pro Grk W04 Bold")format("svg");
     }
 
 /* -- // Core Elements */
@@ -33,7 +53,6 @@ header {
 }
 
 main {
-
 }
 
 footer {
@@ -83,11 +102,13 @@ footer {
 #username {
     margin-bottom: 0;
     overflow-wrap: break-word;
+    letter-spacing: 2px;
 }
 
 #points {
     margin-top: 0;
     overflow-wrap: break-word;
+    letter-spacing: 0px;
 }
 
 #icon {
@@ -99,3 +120,24 @@ footer {
 }
 
 /* */
+
+/* // Footer */
+.fIsland {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.fButton {
+    background-color: rgb(195, 166, 88);
+    height: 100%;
+    width: 33%;
+    margin: 1px;
+}
+
+/* // Body */
+
