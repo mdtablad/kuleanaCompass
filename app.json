@@ -37,6 +37,32 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "fonts": [
+      {
+        "asset": "./assets/fonts/impact.ttf",
+        "name": "Impact"
+      },
+      {
+        "asset": "./assets/fonts/Roboto-Regular.ttf",
+        "name": "Roboto-Regular"
+      },
+      {
+        "asset": "./assets/fonts/Roboto-SemiBold.ttf",
+        "name": "Roboto-SemiBold"
+      },
+      {
+        "asset": "./assets/fonts/Roboto-Italic.ttf",
+        "name": "Roboto-Italic"
+      }
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "76eacce6-23be-400e-81f1-ee2ae50c5ec3"
+      }
+    },
+    "owner": "altronx"
   }
 }
+
