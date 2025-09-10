@@ -24,13 +24,14 @@ export default function Index() {
       <MapView 
         style={{
           width: '100%',
-          height: '100%'
+          height: '100%',
+          zIndex: 20
         }} 
         initialRegion={{
                   latitude: 21.4667,
                   longitude: -157.9833,
-                  latitudeDelta: 0.5,
-                  longitudeDelta: 0.5,
+                  latitudeDelta: 0.58,
+                  longitudeDelta: 0.58,
         }}/>
     </View>
     

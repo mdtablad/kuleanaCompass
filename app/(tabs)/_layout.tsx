@@ -25,7 +25,12 @@ const _Layout = () => {
                         <Text className='hidden'></Text>
                     ),
                     tabBarStyle: {
-                        backgroundColor: '#ffffff',
+                        borderTopWidth: 0,
+                        backgroundColor: 'transparent',
+                        position: 'absolute',
+                        left: 0,
+                        bottom: 0,
+                        right: 0
                     },
                     tabBarIcon: ({ focused }) => (
                         <> 
@@ -44,7 +49,12 @@ const _Layout = () => {
                         <Text className='hidden'></Text>
                     ),
                     tabBarStyle: {
-                        backgroundColor: '#ffffff',
+                        borderTopWidth: 0,
+                        backgroundColor: 'transparent',
+                        position: 'absolute',
+                        left: 0,
+                        bottom: 0,
+                        right: 0
                     },
                     tabBarIcon: ({ focused }) => (
                         <> 
@@ -65,7 +75,12 @@ const _Layout = () => {
                         <Text className='hidden'></Text>
                     ),
                     tabBarStyle: {
-                        backgroundColor: '#ffffff',
+                        borderTopWidth: 0,
+                        backgroundColor: 'transparent',
+                        position: 'absolute',
+                        left: 0,
+                        bottom: 0,
+                        right: 0
                     },
                     tabBarIcon: ({ focused }) => (
                         <> 
