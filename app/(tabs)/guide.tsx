@@ -1,11 +1,8 @@
 import { Text, Button, Alert, Image, TouchableOpacity, View, ScrollView, ImageBackground, Linking } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import MapView from 'react-native-maps';
 import { Link, useRouter } from "expo-router";
 import { useFonts } from '@expo-google-fonts/roboto/useFonts';
 import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
-import "@/app/globals.css"
-
 
 export default function Index() {
   const router = useRouter(); // Get the router instance
@@ -20,19 +17,13 @@ export default function Index() {
 
   return (
     
-    <View className="w-[100vw] h-[100vh]">
-      <MapView 
-        style={{
-          width: '100%',
-          height: '100%'
-        }} 
-        initialRegion={{
-                  latitude: 21.4667,
-                  longitude: -157.9833,
-                  latitudeDelta: 0.5,
-                  longitudeDelta: 0.5,
-        }}/>
-    </View>
+    <SafeAreaProvider className="flex-col">
+      <SafeAreaView>
+        <Text className="text-[10vw] ">Hello There</Text>
+      </SafeAreaView>
+      
+    </SafeAreaProvider>
+    
     
   );
 }

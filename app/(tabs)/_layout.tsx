@@ -1,3 +1,4 @@
+import "@/app/globals.css"
 import {StyleSheet, Text, View, Image, ImageBackground} from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
@@ -24,7 +25,7 @@ const _Layout = () => {
                         <Text className='hidden'></Text>
                     ),
                     tabBarStyle: {
-                        backgroundColor: '#0d0d59',
+                        backgroundColor: '#ffffff',
                     },
                     tabBarIcon: ({ focused }) => (
                         <> 
@@ -43,7 +44,7 @@ const _Layout = () => {
                         <Text className='hidden'></Text>
                     ),
                     tabBarStyle: {
-                        backgroundColor: '#0d0d59',
+                        backgroundColor: '#ffffff',
                     },
                     tabBarIcon: ({ focused }) => (
                         <> 
@@ -64,7 +65,7 @@ const _Layout = () => {
                         <Text className='hidden'></Text>
                     ),
                     tabBarStyle: {
-                        backgroundColor: '#0d0d59',
+                        backgroundColor: '#ffffff',
                     },
                     tabBarIcon: ({ focused }) => (
                         <> 
@@ -73,7 +74,7 @@ const _Layout = () => {
                     )
                 }}
             />
-            <Tabs.Screen
+            {/* <Tabs.Screen
                 name="cafe"
                 
                 options={{
@@ -83,29 +84,7 @@ const _Layout = () => {
                     
 
                 }}
-            />
-            <Tabs.Screen
-                name="contacts"
-                
-                options={{
-                    title: 'Contacts',
-                    href: null, // hides from tab bar
-                    headerShown: false,
-                    
-
-                }}
-            />
-            <Tabs.Screen
-                name="bell"
-                
-                options={{
-                    title: 'Bell',
-                    href: null, // hides from tab bar
-                    headerShown: false,
-                    
-
-                }}
-            />
+            /> */}
         </Tabs>
     )
 }
