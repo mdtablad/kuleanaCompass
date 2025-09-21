@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
 const { width } = Dimensions.get('window');
 const baseWidth = 390; // Reference design width
 
-export default function CameraScreen([navigation]) {
+export default function CameraScreen({navigation}) {
   return (
     <View style={styles.canvas}>
         <Text style={styles.mainLabel}>Camera</Text>
@@ -22,6 +22,6 @@ const styles = StyleSheet.create({
   },
 
   mainLabel: {
-    color: 'white',
+    color: 'black',
   }
 });

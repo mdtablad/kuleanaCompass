@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
 const { width } = Dimensions.get('window');
 const baseWidth = 390; // Reference design width
 
-export default function MapScreen([navigation]) {
+export default function MapScreen({navigation}) {
   return (
     <View style={styles.canvas}>
         <Text style={styles.mainLabel}>Map</Text>

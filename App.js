@@ -6,6 +6,7 @@ import Tabs from './navigation/tabs';
 
 const { width } = Dimensions.get('window');
 const baseWidth = 390; // Reference design width
+
 const App = () => {
   return (
     <NavigationContainer>
@@ -14,90 +15,7 @@ const App = () => {
   );
 }
 
-export default function KuleanaScreen() {
-  return (
-    <View style={styles.canvas}>
-      
-    
-      <StatusBar barStyle="dark-content"/>
-      
-      {/* ==================================== */}
-      {/* Nav Island (bar) */}
-      <View style={styles.navIsland}>
-        {/* Islands */}
-        <View style={styles.rightMiniIsland} />
-        <View style={styles.leftMiniIsland} />
-        <View style={styles.centerIsland} />
-
-        {/* Points */}
-        <Text style={styles.pointsLabel}>0</Text>
-
-        {/* Button Icons*/}
-        <Image
-          source={require('./assets/imgs/Ellipse_16_1.png')}
-          style={styles.cameraIconBackground}
-        />
-        <Image
-          source={require('./assets/imgs/Ellipse_16_3.png')}
-          style={styles.mapIconBackground}
-        />
-
-        {/* Map Icon */}
-        <View style={styles.mapIcon}>
-          <View style={styles.mapIconPart1} />
-          <View style={styles.mapIconPart2} />
-          <View style={styles.mapIconPart3}>
-            <Image
-              source={require('./assets/imgs/Boolean_operation_24_27.png')}
-              style={styles.mapIconPart4}
-            />
-          </View>
-        </View>
-
-        {/* Camera Icon */}
-        <View style={styles.cameraIcon}>
-          <Image
-            source={require('./assets/imgs/Vector_24_36.png')}
-            style={styles.cameraIconPart1}
-          />
-        </View>
-
-        {/* Points Icon */}
-        <Image
-          source={require('./assets/imgs/Vector_39_12.png')}
-          style={styles.pointsIcon}
-        />
-
-        {/* Translate Icon */}
-        <View style={styles.translateIcon}>
-          <Image
-            source={require('./assets/imgs/Vector_39_24.png')}
-            style={styles.translateIconPart1}
-          />
-          <View style={styles.translateIconPart2}>
-            <Image
-              source={require('./assets/imgs/Vector_39_18.png')}
-              style={styles.translateIconPart3}
-            />
-          </View>
-        </View>
-
-        {/* Compass Icon */}
-        <View style={styles.compassIcon}>
-          <Image
-            source={require('./assets/imgs/Ellipse_43_37.png')}
-            style={styles.compassIconPart2}
-          />
-          {/* The group-41_44 and vector-41_45 are display: none in HTML, so not rendered */}
-          <Image
-            source={require('./assets/imgs/Vector_41_50.png')}
-            style={styles.compassIconPart3}
-          />
-        </View>
-      </View>
-    </View>
-  );
-}
+export default App
 
 const scale = (v) => (width / baseWidth) * v;
 

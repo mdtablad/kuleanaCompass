@@ -4,13 +4,13 @@ import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
 const { width } = Dimensions.get('window');
 const baseWidth = 390; // Reference design width
 
-export default function CompassScreen([navigation]) {
+export default function CompassScreen({navigation}) {
   return (
     <View style={styles.canvas}>
         <Text style={styles.mainLabel}>Compass</Text>
     </View>
   );
-}
+};
 
 const scale = (v) => (width / baseWidth) * v;
 
