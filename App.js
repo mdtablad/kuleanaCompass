@@ -1,14 +1,25 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import Tabs from './navigation/tabs';
 
 const { width } = Dimensions.get('window');
 const baseWidth = 390; // Reference design width
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Tabs />
+    </NavigationContainer>
+  );
+}
 
 export default function KuleanaScreen() {
   return (
     <View style={styles.canvas}>
-
-
+      
+    
+      <StatusBar barStyle="dark-content"/>
       
       {/* ==================================== */}
       {/* Nav Island (bar) */}
