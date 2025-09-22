@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, Image, StyleSheet, Dimensions, Pressable } from 'react-native';
+import CustomNav from '../../customNav'
 
 const { width } = Dimensions.get('window');
 const baseWidth = 390; // Reference design width
@@ -7,7 +8,7 @@ const baseWidth = 390; // Reference design width
 export default function MapScreen({navigation}) {
   return (
     <View style={styles.canvas}>
-        <Text style={styles.mainLabel}>Map</Text>
+        <CustomNav/>
     </View>
   );
 }
