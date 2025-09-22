@@ -39,6 +39,14 @@
         {
           "androidGoogleMapsApiKey": "process.env.YOUR_GOOGLE_MAPS_API_KEY"
         }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
       ]
     ],
     "experiments": {

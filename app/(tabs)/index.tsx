@@ -1,6 +1,6 @@
-import { Text, Button, Alert, Image, TouchableOpacity, View, ScrollView, ImageBackground, Linking } from "react-native";
+import { Text, Button, Alert, Image, TouchableOpacity, View, ScrollView, ImageBackground, Linking, Geolocation } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import MapView from 'react-native-maps';
+import MapView, { Marker } from 'react-native-maps';
 import { Link, useRouter } from "expo-router";
 import { useFonts } from '@expo-google-fonts/roboto/useFonts';
 import { Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
@@ -32,7 +32,13 @@ export default function Index() {
                   longitude: -157.9833,
                   latitudeDelta: 0.58,
                   longitudeDelta: 0.58,
-        }}/>
+        }}> 
+          <Marker
+            coordinate={{ latitude: 21.4667, longitude: -157.9833 }}
+            title="My Location"
+            description="This is a description of my location."
+          />
+        </MapView>
     </View>
     
   );

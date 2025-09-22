@@ -16,17 +16,17 @@ const _Layout = () => {
 
         >
             <Tabs.Screen
-                name="guide"
+                name="chat"
                 options={{
                     title: 'Guide',
-                    tabBarActiveTintColor: '#ae8c52',
+                    tabBarActiveTintColor: '#ECA400',
                     headerShown: false,
                     tabBarLabel: ({ focused }) => (
                         <Text className='hidden'></Text>
                     ),
                     tabBarStyle: {
                         borderTopWidth: 0,
-                        backgroundColor: 'transparent',
+                        backgroundColor: '#27476E',
                         position: 'absolute',
                         left: 0,
                         bottom: 0,
@@ -34,7 +34,7 @@ const _Layout = () => {
                     },
                     tabBarIcon: ({ focused }) => (
                         <> 
-                            <Image source={require('@/assets/images/whs-info.png')} tintColor={focused ? '#ae8c52' : '#ffffff'} className='size-8 mt-6'/>    
+                            <Image source={require('@/assets/images/whs-info.png')} tintColor={focused ? '#ECA400' : '#ffffff'} className='size-8 mt-6'/>    
                         </>
                     )
                 }}
@@ -66,7 +66,7 @@ const _Layout = () => {
                 }}
             />
             <Tabs.Screen
-                name="map"
+                name="camera"
                 options={{
                     title: 'Campus',
                     tabBarActiveTintColor: '#ae8c52',
