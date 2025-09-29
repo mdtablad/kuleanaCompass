@@ -4,6 +4,7 @@ import {
   CameraView,
   useCameraPermissions,
 } from "expo-camera";
+
 import { useRef, useState } from "react";
 import { Button, Pressable, StyleSheet, Text, View } from "react-native";
 import { Image } from "expo-image";
@@ -36,8 +37,10 @@ export default function App() {
 
   const takePicture = async () => {
     const photo = await ref.current?.takePictureAsync();
-    if (photo?.uri) setUri(photo.uri);
-    console.log(photo?.uri)
+    if (photo?.uri) {
+      setUri(photo.uri)
+      console.log(photo.uri);
+    };
   };
 
   const recordVideo = async () => {
@@ -97,7 +100,7 @@ export default function App() {
                   style={[
                     styles.shutterBtnInner,
                     {
-                      backgroundColor: mode === "picture" ? "white" : "red",
+                      backgroundColor: "white",
                     },
                   ]}
                 />
@@ -115,6 +118,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       {uri ? renderPicture(uri) : renderCamera()}
+      
     </View>
   );
 }
