@@ -32,8 +32,7 @@ app.post('/api/gemini-text', async (req, res) => {
 });
 
 app.post('/api/gemini-text-image', async (req, res) => {
-  const { prompt, image } = req.bodyhttps://github.com/mdtablad/kuleanaCompass.git
-  console.log('Received body:', req.body);
+  const { prompt, image } = req.body;
   try {
     const genAI = new GoogleGenerativeAI(API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
